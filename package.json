@@ -1,0 +1,12 @@
+{
+  "name": "class-8g-quiz",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CLASS 8G QUIZ — desert-themed quiz app with Supabase leaderboard, deployed on Vercel.",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  }
+}

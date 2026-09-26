@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Result — CLASS 8G QUIZ</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="desert-bg">
+    <div class="dune">
+      <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
+        <path fill="#1c130c" d="M0,140 C240,200 420,80 700,130 C980,180 1200,90 1440,150 L1440,260 L0,260 Z"/>
+        <path fill="#120c07" d="M0,190 C260,230 500,160 760,200 C1040,240 1220,170 1440,210 L1440,260 L0,260 Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="grain"></div>
+
+  <div class="page">
+    <div class="card" id="result-card">
+      <span class="result-icon" id="result-icon">⏳</span>
+      <p class="result-title" id="result-title">Memuat hasil...</p>
+      <p class="result-sub" id="result-sub"></p>
+
+      <div class="stat-grid" id="stat-grid" style="display:none;">
+        <div class="stat-box"><div class="value" id="stat-score">-</div><div class="label">Score</div></div>
+        <div class="stat-box"><div class="value" id="stat-correct">-</div><div class="label">Correct</div></div>
+        <div class="stat-box"><div class="value" id="stat-time">-</div><div class="label">Time</div></div>
+      </div>
+
+      <div class="status-line" id="status-line" style="display:none;"></div>
+
+      <button class="btn btn-primary" id="primary-btn" style="display:none;"></button>
+      <button class="btn btn-secondary" id="secondary-btn" style="display:none;">RETURN TO START</button>
+    </div>
+  </div>
+
+  <script src="/result.js"></script>
+</body>
+</html>

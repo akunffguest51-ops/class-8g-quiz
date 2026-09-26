@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz — CLASS 8G QUIZ</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="desert-bg">
+    <div class="dune">
+      <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
+        <path fill="#1c130c" d="M0,140 C240,200 420,80 700,130 C980,180 1200,90 1440,150 L1440,260 L0,260 Z"/>
+        <path fill="#120c07" d="M0,190 C260,230 500,160 760,200 C1040,240 1220,170 1440,210 L1440,260 L0,260 Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="grain"></div>
+
+  <div class="page">
+    <div class="quiz-header">
+      <span class="progress-pill" id="progress-pill">Soal 1 / 10</span>
+      <span class="timer" id="timer">00:45</span>
+    </div>
+    <div class="progress-bar"><div class="progress-bar-fill" id="progress-fill" style="width:10%"></div></div>
+
+    <div class="card wide" id="question-card">
+      <span class="category-tag" id="category-tag">—</span>
+      <p class="question-text" id="question-text">Memuat soal...</p>
+      <div class="options" id="options"></div>
+    </div>
+
+    <div class="card wide quiz-actions">
+      <button class="btn btn-primary" id="next-btn" disabled>NEXT →</button>
+    </div>
+  </div>
+
+  <!-- Anti-cheat warning overlay -->
+  <div class="overlay" id="warn-overlay">
+    <div class="overlay-card">
+      <div class="emoji">⚠️</div>
+      <h2>WARNING</h2>
+      <p>Activity change detected.</p>
+      <div class="counter" id="violation-counter">Violation 1/2</div>
+      <button class="btn btn-secondary" id="warn-continue-btn" style="margin-top:18px;">Lanjutkan Quiz</button>
+    </div>
+  </div>
+
+  <!-- Disqualified overlay -->
+  <div class="overlay" id="dq-overlay">
+    <div class="overlay-card">
+      <div class="emoji">🚫</div>
+      <h2>QUIZ DISQUALIFIED</h2>
+      <p>Your submission has been disqualified because multiple violations were detected.</p>
+    </div>
+  </div>
+
+  <script src="/quiz.js"></script>
+</body>
+</html>

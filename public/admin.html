@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Admin — CLASS 8G QUIZ</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="desert-bg">
+    <div class="dune">
+      <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
+        <path fill="#1c130c" d="M0,140 C240,200 420,80 700,130 C980,180 1200,90 1440,150 L1440,260 L0,260 Z"/>
+        <path fill="#120c07" d="M0,190 C260,230 500,160 760,200 C1040,240 1220,170 1440,210 L1440,260 L0,260 Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="grain"></div>
+
+  <div class="page">
+    <div class="brand">
+      <div class="icon">🛠️</div>
+      <h1 style="font-size:26px;">ADMIN DASHBOARD</h1>
+    </div>
+
+    <div class="card" id="login-card">
+      <label for="admin-key">Admin Key</label>
+      <input type="password" id="admin-key" placeholder="Masukkan admin key" autocomplete="off" />
+      <p id="login-error" style="color:#ff6b5b; font-size:12.5px; margin:8px 0 0; display:none;"></p>
+      <button class="btn btn-primary" id="login-btn">MASUK</button>
+    </div>
+
+    <div class="card wide" id="dashboard-card" style="display:none;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+        <span class="progress-pill" id="total-pill">0 submissions</span>
+        <button class="btn btn-secondary" id="refresh-btn" style="width:auto; margin:0; padding:8px 16px;">↻ Refresh</button>
+      </div>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>ID</th><th>Nickname</th><th>Score</th><th>Correct</th><th>Time</th>
+              <th>Violations</th><th>Status</th><th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody id="admin-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <button class="btn btn-secondary" id="logout-btn" style="max-width:460px; display:none;">← BACK TO START</button>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Leaderboard — CLASS 8G QUIZ</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="desert-bg">
+    <div class="dune">
+      <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
+        <path fill="#1c130c" d="M0,140 C240,200 420,80 700,130 C980,180 1200,90 1440,150 L1440,260 L0,260 Z"/>
+        <path fill="#120c07" d="M0,190 C260,230 500,160 760,200 C1040,240 1220,170 1440,210 L1440,260 L0,260 Z"/>
+      </svg>
+    </div>
+  </div>
+  <div class="grain"></div>
+
+  <div class="page">
+    <div class="brand">
+      <div class="icon">🏆</div>
+      <h1 style="font-size:28px;">CLASS 8G LEADERBOARD</h1>
+    </div>
+
+    <div class="card wide">
+      <div id="lb-loading" class="lb-loading">Memuat leaderboard...</div>
+      <table class="lb-table" id="lb-table" style="display:none;">
+        <thead>
+          <tr><th>Rank</th><th>Player</th><th>Score</th><th>Time</th></tr>
+        </thead>
+        <tbody id="lb-body"></tbody>
+      </table>
+      <div id="lb-empty" class="lb-empty" style="display:none;">Belum ada peserta yang clean di leaderboard.</div>
+    </div>
+
+    <button class="btn btn-secondary" style="max-width:460px;" id="back-btn">← BACK TO START</button>
+  </div>
+
+  <script src="/leaderboard.js"></script>
+</body>
+</html>
